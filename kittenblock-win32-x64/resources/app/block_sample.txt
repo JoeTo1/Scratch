@@ -1,0 +1,3 @@
+Blockly.Blocks.operator_add={init:function(){this.jsonInit({message0:Blockly.Msg.OPERATORS_ADD,args0:[{type:"input_value",name:"NUM1"},{type:"input_value",name:"NUM2"}],category:Blockly.Categories.operators,extensions:["colours_operators","output_number"]})}};
+
+Blockly.Blocks.arduino_basic={init:function(){this.jsonInit({message0:Blockly.Msg.ARDUINO_BEGIN, args0:[{type:"input_value",name:"NUM1"}],category:Blockly.Categories.operators,extensions:["colours_operators"]})}};
