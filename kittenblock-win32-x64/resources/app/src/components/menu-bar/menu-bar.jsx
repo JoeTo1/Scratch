@@ -352,7 +352,8 @@ class MenuBar extends React.Component {
                                 [styles.active]: this.props.uploadMenuOpen
                             })}
                             onClick={() => {
-                                this.props.clickUploadMenu()
+                                this.props.clickUploadMenu();
+                                setTimeout(()=>{this.props.clickUploadMenu(); console.log('~~~~~~~~~~')},2000);
                             }}
                         >
                             <div className={classNames(styles.editMenu)}>

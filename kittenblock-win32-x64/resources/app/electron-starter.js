@@ -49,6 +49,7 @@ app.once('ready', () => {
     });
 
     server.post('/upload', function (req, res) {
+        console.log('===========>   received')
         var progressbar = new ProgressBar({
             indeterminate: true,
             text: 'Uploading...',

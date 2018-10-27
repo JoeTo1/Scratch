@@ -19,6 +19,7 @@ const initialState = {
 
 const reducer = function (state, action) {
     if (typeof state === 'undefined') state = initialState;
+    const {uploadMenuClicked} = state;
     switch (action.type) {
     case OPEN_MENU:
         return Object.assign({}, state, {
@@ -34,7 +35,7 @@ const reducer = function (state, action) {
         });
     case UPLOAD_MENU:
         return Object.assign({}, state, {
-            uploadMenuClicked: true
+            uploadMenuClicked: !uploadMenuClicked
         });
     default:
         return state;
